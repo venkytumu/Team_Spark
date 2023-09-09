@@ -62,9 +62,7 @@
     display: none;
 }  
 
-.slotsize1:active{
-    background-color: green;
-}
+
 
 .seat.selected{
     background-color: brown;
@@ -87,16 +85,24 @@
     border-radius: 6px;
     display: inline-block;
 }
-
+.space.na{
+    background-color: yellow;
+}
 .slot.n{
-    display: inline-block;  
+    width: 1px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: #fff; 
+    padding-right: 50px;
 }
 .space.occupied{
     width: 1px;
     padding: 10px;
     border: 2px solid black;
     padding-top: 10px;
-    background-color: #eee;
+    background-color: red;
+    
 }
 .space.selected{
     width: 1px;
@@ -105,4 +111,36 @@
     padding-top: 10px;
     background-color: green;
 
+}
+
+     /* CSS for styling the seats */
+.slotsize1 {
+        width: 50px;
+        height: 50px;
+        background-color: #eee; /* Default background color for seats */
+        border: 1px solid #ccc;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+}
+/*  
+.slotsize1.blocked {
+    background-color: red; /* Background color for blocked seats 
+    color: #666; /* Text color for blocked seats 
+    cursor: not-allowed;
+    font-weight:bold;
+} */
+/* Styling for selected seats */
+
+.slotsize1.selected {
+    background-color: green; /* Change this to your desired highlight color */
+    color: #ffffff; /* Text color for selected seat */
+    font-weight: bold;
+}
+.slot{
+    padding-right: 120px;
+}
+@media screen {
+
+    
 }
