@@ -2,11 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
+
 .row.stage1{
     padding-top: 10px;
 }
 .col-3.date1{
-    padding-left: 280px;
+    padding-left: 250px;
 }
 .col-3.date1 p{
     font-size: 20px;
@@ -15,6 +16,7 @@
 .col-1.search{
     padding-top: 2px;
     border-radius: 12px;
+    padding-left: 100px;
     
 }
 .col-2.datevalue{
@@ -64,9 +66,7 @@
 
 
 
-.seat.selected{
-    background-color: brown;
-}
+
 .required{
     padding-top: 10px
 }
@@ -85,18 +85,18 @@
     border-radius: 6px;
     display: inline-block;
 }
-.space.na{
-    background-color: yellow;
+/* .space.na{ */
+    /* background-color: yellow;
 }
-.slot.n{
+.slot.na{
     width: 1px;
     padding: 10px;
     border: 2px solid black;
     padding-top: 10px;
     background-color: #fff; 
     padding-right: 50px;
-}
-.space.occupied{
+} */
+.space.occupied{   /*if the seat is occupied then colour changes to red*/
     width: 1px;
     padding: 10px;
     border: 2px solid black;
@@ -109,7 +109,7 @@
     padding: 10px;
     border: 2px solid black;
     padding-top: 10px;
-    background-color: green;
+    background-color: green;  /*slected seat change colour */
 
 }
 
@@ -138,9 +138,33 @@
     font-weight: bold;
 }
 .slot{
-    padding-right: 120px;
+    padding-left: 100px;
 }
-@media screen {
 
-    
+/* Default styles for larger screens */
+.container-fluid {
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center content horizontally */
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1, .col-2, .col-3 {
+    flex: 1;
+    min-width: 0; /* Allow columns to shrink */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .col-1, .col-2, .col-3 {
+        flex-basis: 100%; /* Full width for columns on smaller screens */
+    }
+    
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* Add more media queries and adjust styles as needed for different screen sizes */
