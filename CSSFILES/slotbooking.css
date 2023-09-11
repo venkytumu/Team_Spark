@@ -1,0 +1,173 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.row.stage1{
+    padding-top: 10px;
+}
+.col-3.dateblock{
+    padding-left: 400px;
+}
+.datename {
+    font-size:30px;
+}
+.dateinput{
+    height: 40px;
+    font-size: 20px;
+}
+.col-2.search{
+    padding-top: 2px;
+    border-radius: 12px;
+    padding-left: 0px;
+    
+}
+.col-2.datevalue{
+    padding-left: 20px;
+}
+.Search-slot{
+    cursor: pointer;
+    
+    
+}
+
+
+.row{
+    padding-top: 50px;
+}
+
+.col-12{
+    padding-left: 50%;
+}
+.slotdata{
+    text-align: center;
+    padding-left: 20%;
+    
+}
+
+/* .col-12{
+    padding-left: 20%;
+} */
+.row.slotsize{
+    padding-left: 10%;
+}
+.slotsize1{
+    padding-left: 0px;
+    width: 100%;
+}
+.row.col-12{
+    padding-left: 30%;
+}
+
+/* .row.row-1.col-2.slotsize1{
+    
+} */
+
+.row.slotsize{
+    display: none;
+}  
+
+
+
+
+.required{
+    padding-top: 10px
+}
+.required li{
+    display: inline-flex;
+    padding-right: 10px;
+}
+
+/* space for  */
+.space{
+    width: 1px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: inline-block;
+}
+/* .space.na{ */
+    /* background-color: yellow;
+}
+.slot.na{
+    width: 1px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: #fff; 
+    padding-right: 50px;
+} */
+.space.occupied{   /*if the seat is occupied then colour changes to red*/
+    width: 1px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: red;
+    
+}
+.space.selected{
+    width: 1px;
+    padding: 10px;
+    border: 2px solid black;
+    padding-top: 10px;
+    background-color: green;  /*slected seat change colour */
+
+}
+
+     /* CSS for styling the seats */
+.slotsize1 {
+        width: 50px;
+        height: 50px;
+        background-color: #eee; /* Default background color for seats */
+        border: 1px solid #ccc;
+        font-size: 18px;
+        text-align: center;
+        cursor: pointer;
+}
+/*  
+.slotsize1.blocked {
+    background-color: red; /* Background color for blocked seats 
+    color: #666; /* Text color for blocked seats 
+    cursor: not-allowed;
+    font-weight:bold;
+} */
+/* Styling for selected seats */
+
+.slotsize1.selected {
+    background-color: green; /* Change this to your desired highlight color */
+    color: #ffffff; /* Text color for selected seat */
+    font-weight: bold;
+}
+.slot{
+    padding-left: 100px;
+}
+
+/* Default styles for larger screens */
+.container-fluid {
+    max-width: 1200px; /* Set a maximum width for content */
+    margin: 0 auto; /* Center content horizontally */
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col-1, .col-2, .col-3 {
+    flex: 1;
+    min-width: 0; /* Allow columns to shrink */
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+    .col-1, .col-2, .col-3 {
+        flex-basis: 100%; /* Full width for columns on smaller screens */
+    }
+    
+    /* Adjust other styles as needed for smaller screens */
+}
+
+/* Add more media queries and adjust styles as needed for different screen sizes */
