@@ -6,30 +6,28 @@
 .row.stage1{
     padding-top: 10px;
 }
-.col-3.dateblock{
+/* .col-3.dateblock{
     padding-left: 400px;
-}
+} */
 .datename {
     font-size:30px;
+}
+
+.col-5.dateblock{
+    padding-left: 230px;
 }
 .dateinput{
     height: 40px;
     font-size: 20px;
 }
-.col-2.search{
-    padding-top: 2px;
-    border-radius: 12px;
-    padding-left: 0px;
-    
-}
+
 .col-2.datevalue{
     padding-left: 20px;
 }
-.Search-slot{
-    cursor: pointer;
+
     
     
-}
+
 
 
 .row{
@@ -150,24 +148,37 @@
     margin: 0 auto; /* Center content horizontally */
 }
 
+/* Default styles for larger screens */
 .row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    align-items: center;
 }
 
-.col-1, .col-2, .col-3 {
+.col-3, .col-2, .col-1 {
     flex: 1;
-    min-width: 0; /* Allow columns to shrink */
+    min-width: 0;
+    text-align: center;
 }
 
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 768px) {
-    .col-1, .col-2, .col-3 {
-        flex-basis: 100%; /* Full width for columns on smaller screens */
+    .row {
+        flex-direction: column; /* Stack columns on top of each other */
     }
-    
-    /* Adjust other styles as needed for smaller screens */
-}
 
-/* Add more media queries and adjust styles as needed for different screen sizes */
+    .col-3, .col-2, .col-1 {
+        flex-basis: auto; /* Allow columns to expand to their content width */
+        margin-bottom: 10px; /* Add spacing between columns */
+    }
+
+    .search button {
+        width: 100%; /* Make the button full width on smaller screens */
+        height: auto; /* Adjust button height based on content */
+        padding: 5px; /* Add padding to the button */
+    }
+
+    .slotsize1 {
+        width: 100%; /* Make seat buttons full width on smaller screens */
+        margin: 5px 0; /* Add vertical spacing between seat buttons */
+    }
+}
